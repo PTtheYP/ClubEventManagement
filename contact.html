@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{padding:0;
+margin:0;}
+body
+{
+background-image:url(background.png);
+background-position:absolute;
+background-size:cover;
+box-sizing:border-box;
+}
+.menu-bar{
+background-color:#008B8B;
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+text-align:center;
+list-style:none;
+}
+.menu-bar ul li{
+padding:15px;
+width:120px;
+margin:15px;
+}
+.menu-bar ul li a{
+color:white;
+text-decoration:none;
+}
+.active,.menu-bar ul li:hover{
+background:pink;
+border-radius:2px;
+}
+.sub-menu{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+display:block;
+position:absolute;
+background:#008B8B;
+margin-left:-15px;
+margin-top:15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+width:110px;
+padding:10px;
+border-bottom:1px dotted white;
+text-align:left;
+background:transparent;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color:pink;
+}
+.center-div{
+padding:20px;
+width:1326px;
+height:20px;
+border:opx;
+text-align:center;
+background-color:MediumOrchid;
+color:white;
+word-spacing:20px;
+text-transform:uppercase;
+text-shadow:2px 2px 5px HotPink;
+font-size:x-large;
+}
+.d4{width:800px;height:460px;margin-left:200px;margin-top:10px;margin-right:20px;border-radius:30px;border:Dotted Snow;background-color:Snow;text-align:center;float:left}
+.title{text-transform:upper-roman;word-spacing:6px;font-style:serif;font-weight:bold;font-size:xx-large;text-shadow:2px 2px 5px Gold;color:SlateBlue;margin-top:20px;margin-bottom:35px;}
+.div5{width:300px;height:427px;float:left;color:white; background-color:gray;margin:0 auto;margin-left:40px;font-style:oblique;margin-right:20px;padding-left:50px;padding-top:40px;margin-top:10px;margin-bottom:10px;}
+input{color:gray;}
+.r{width:10%;height:450px;text-align:center;background-color:white;float:right;margin:10px;padding-top:15px;font-style:normal;}
+.ins{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:200px;
+margin:50px;}
+.gmail{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:100px;
+margin:50px;}
+.fb{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:100px;
+margin:50px;}
+</style>
+</head>
+<body>
+<div class="center-div">
+<marquee><b><i>CATS COMPUTER CLUB</i></b></marquee>
+</div>
+<div class="menu-bar">
+<ul>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\css_menu.html">Home</a></li>
+<li ><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\about.html">About</a></li>
+<li ><a href="#">Register</a>
+<div class="sub-menu">
+<ul id="sub-list">
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\registration.html">Membership</a></li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\event2.html">Events</a></li>
+</ul>
+</div>
+</li>
+<li class="active"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\contact.html">Contact</a></li>
+<li class="ri"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\log.html">login</a></li>
+</ul>
+</div>
+<div class="d4">
+<p class="title" >To Contact</p><br>
+<form>
+<pre>
+First Name  : <input class="in" type="text" size="20" maxlength="30" pattern="[A-Za-z]{3,}" value="Preethi"><br><br>
+Second Name : <input type="text" size="20" maxlength="30" pattern="[A-Za-z]{1,}" value="S"><br><br>
+Mobile No   : <input class="in" type="text" pattern="[0-9]{10}" maxlength="10"  name="Mobile" value="9988776655" required><br><br>
+Querry    <textarea class="in" rows="6" cols="50"  name="Address" required></textarea><br>
+<input style="background-color:SlateBlue;border-radius:10px; color:white; padding:10px;" type="submit" name="submit" >
+</pre>
+</form>
+</div>
+<div class="r">
+Also contact us on<br>
+<div class="ins">
+<a href="#">
+<img  src="ins.png"  width="50" height="50">
+</a></div>
+<div class="gmail">
+<a href="#">
+<img  src="gmail.png"  width="50" height="50">
+</a></div>
+<div class="fb">
+<a href="#">
+<img  src="fb.png"  width="50" height="50">
+</a></div>
+</div>
+</body>
+</html>
