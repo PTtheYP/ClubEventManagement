@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{padding:0;
+margin:0;}
+body
+{
+background-image:url(background.png);
+background-position:absolute;
+background-size:cover;
+box-sizing:border-box;
+}
+.menu-bar{
+background-color:#008B8B;
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+text-align:center;
+list-style:none;
+}
+.menu-bar ul li{
+padding:15px;
+width:120px;
+margin:15px;
+}
+.menu-bar ul li a{
+color:white;
+text-decoration:none;
+}
+.active,.menu-bar ul li:hover{
+background:pink;
+border-radius:2px;
+}
+.sub-menu{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+display:block;
+position:absolute;
+background:#008B8B;
+margin-left:-15px;
+margin-top:15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+width:110px;
+padding:10px;
+border-bottom:1px dotted white;
+text-align:left;
+background:transparent;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color:pink;
+}
+.center-div{
+padding:20px;
+width:1326px;
+height:20px;
+border:opx;
+text-align:center;
+background-color:MediumOrchid;
+color:white;
+word-spacing:20px;
+txt-transform:uppercase;
+text-shadow:2px 2px 5px HotPink;
+font-size:x-large;
+}
+.l{width:85%;height:450px;background-color:white;float:left;margin:10px;padding:8px;text-align:left;}
+//.c{width:73.33%;background-color:yellow;margin:0 auto;}
+.r{width:10%;height:450px;text-align:center;background-color:white;float:right;margin:10px;padding-top:15px;font-style:italic;}
+.ins{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:100px;
+margin:50px;}
+.gmail{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:100px;
+margin:50px;}
+.fb{
+width:50px;
+height:50px;
+text-align:center;
+border:pink;
+border-radius:100px;
+margin:50px;}
+.im{float:left;
+margin-right:20px;}
+.p{margin:30px;font-size:large;font-weight:lighter;}
+.p1{margin:30px;font-weight:bold;font-style:oblique;text-shadow:10px 5px 20px pink;}
+.quotes{text-transform:uppercase;
+word-spacing:10px;
+line-height:25px;
+text-align:center;
+text-shadow:10px 5px 20px blue;
+margin-top:70px;
+font-style:oblique;}
+.ri{float:right}
+</style>
+</head>
+<body>
+<div class="center-div">
+<marquee><b><i>CATS COMPUTER CLUB</i></b></marquee>
+</div>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\css_menu.html">Home</a></li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\about.html">About</a></li>
+<li><a href="#">Register</a>
+<div class="sub-menu">
+<ul id="sub-list">
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\registration.html">Membership</a></li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\event2.html">Events</a></li>
+</ul>
+</div>
+</li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\contact.html">Contact</a></li>
+<li class="ri"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\log.html">login</a></li>
+<
+</ul>
+</div>
+<div class="l">
+<img class="im" src="computer.png"  width="300" height="448">
+<p class="p1">WELCOME TO CATS COMPUTER CLUB(CCC)!</p><br>
+<p class="p">
+The Cats Computer Club e. V. (CCC) is India's largest association of computer club. For three years we are providing information about technical and societal issues, such as surveillance, privacy, freedom of information, hacktivism, data security and many other interesting things around technology and hacking issues. As the most influential hacker collective in India we organize campaigns, events, lobbying and publications as well as anonymizing services and communication infrastructure. There are many hackerspaces in and around Germany which belong to or share a common bond to the CCC as stated in our hacker ethics.</p>
+<p class="quotes">"we are changing the world with technology"</p>
+</div>
+<div class="r">
+For contact<br>
+<div class="ins">
+<a href="#">
+<img  src="ins.png"  width="50" height="50">
+</a></div>
+<div class="gmail">
+<a href="#">
+<img  src="gmail.png"  width="50" height="50">
+</a></div>
+<div class="fb">
+<a href="#">
+<img  src="fb.png"  width="50" height="50">
+</a></div>
+</div>
+</body>
+</html>
