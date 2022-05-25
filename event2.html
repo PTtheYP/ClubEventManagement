@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{padding:0;
+margin:0;}
+body
+{
+background-color:white;
+background-position:absolute;
+background-size:cover;
+box-sizing:border-box;
+}
+.menu-bar{
+background-color:#008B8B;
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+text-align:center;
+list-style:none;
+}
+.menu-bar ul li{
+padding:15px;
+width:120px;
+margin:15px;
+}
+.menu-bar ul li a{
+color:white;
+text-decoration:none;
+}
+.active,.menu-bar ul li:hover{
+background:pink;
+border-radius:2px;
+}
+.sub-menu{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+display:block;
+position:absolute;
+background:#008B8B;
+margin-left:-15px;
+margin-top:15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+width:110px;
+padding:10px;
+border-bottom:1px dotted white;
+text-align:left;
+background:transparent;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color:pink;
+}
+.center-div{
+padding:20px;
+width:1309px;
+height:20px;
+border:opx;
+text-align:center;
+background-color:MediumOrchid;
+color:white;
+word-spacing:20px;
+text-transform:uppercase;
+text-shadow:2px 2px 5px HotPink;
+font-size:x-large;
+}
+.trr{align:center;padding:10px;}
+.t{width:35%;height:50px;font-weight:lighter;}
+.th{width:18%;height:50px;padding:10px;font-weight:lighter;}
+.status{color:red;padding:10px;}
+#t{background-color:DarkBlue;color:white;}
+#ti{background-color:#4CAF50;color:white;}
+#ta{border-collapse:collapse;align:center;margin-top:40px;margin-left:auto;margin-right:auto;margin-bottom:0px;font-size:large;}
+#ta tr:hover{background-color:Orange;border:1; cellpadding:2px; cellspacing:10px; align:center;}
+.button{padding:5px;width:100px;height:30px;background-color:DarkBlue;color:white;}
+#button{padding:5px;width:100px;height:30px;}
+</style>
+</head>
+<body>
+<div class="center-div">
+<marquee><b><i>CATS COMPUTER CLUB</i></b></marquee>
+</div>
+<div class="menu-bar">
+<ul>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\css_menu.html">Home</a></li>
+<li ><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\about.html">About</a></li>
+<li class="active"><a href="#">Register</a>
+<div class="sub-menu">
+<ul id="sub-list">
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\registration.html">Membership</a></li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\event2.html">Events</a></li>
+</ul>
+</div>
+</li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\contact.html">Contact</a></li>
+<li class="ri"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\log.html">login</a></li>
+</ul>
+</div>
+<table id="ta" border="1" cellpadding="2px" cellspacing="0" >
+<tr  class="trr">
+  <th  id="t" class="th" colspan="5">Current or Upcoming Events</th>
+</tr>
+<tr class="trr" id="ti">
+  <th  class="t">Title</th><th class="th">Date</th><th class="th">Duration</th><th class="th">Participants</th><th class="th">Status</th>
+</tr> 
+<tr class="trr">
+  <th class="t">Coding Challenge September 2021</th><th class="th">29/09/21</th><th class="th">02.30 hrs</th><th class="th">1290</th><th class="th"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\register.html"><input class="button" type="button" value="register"></a></th>
+</tr>
+</table><br><br>
+<table id="ta" border="1" cellpadding="2px" cellspacing="0">
+<tr class="trr">
+  <th id="t" class="th" colspan="5">Old Events</th>
+</tr>
+<tr class="trr" id="ti">
+  <th class="t">Title</th><th class="th">Date</th><th class="th">Duration</th><th class="th">Participants</th><th id="button" class="th">Status</th>
+</tr> 
+<tr class="trr">
+  <th class="t">Coding Challenge August 2021</th><th class="th">12/08/21</th><th class="th">03.00 hrs</th><th class="th">5290</th><th id="button" class="th">Expired</th>
+</tr>
+<tr class="trr">
+  <th class="t">CCC's Grand Contest 2021</th><th class="th">17/06/21</th><th class="th">03.30 hrs</th><th class="th">3276</th><th id="button" class="th">Expired</th>
+</tr>
+<tr class="trr">
+  <th class="t">Coding Challenge March 2021</th><th class="th">12/03/21</th><th class="th">02.00 hrs</th><th class="th">4590</th><th id="button" class="th">Expired</th>
+</tr>
+<tr class="trr">
+  <th class="t">Coding Challenge January 2021</th><th class="th">09/01/21</th><th class="th">01.00 hrs</th><th class="th">2345</th><th id="button" class="th">Expired</th>
+</tr>
+<tr class="trr">
+  <th class="t">CCC's Grand Contest 2020</th><th class="th">26/09/20</th><th class="th">03.00 hrs</th><th class="th">1289</th><th id="button" class="th">Expired</th>
+</tr>
+<tr class="trr">
+  <th class="t">Coding Challenge June 2020</th><th class="th">02/06/20</th><th class="th">02.50 hrs</th><th class="th">998</th><th id="button" class="th">Expired</th>
+</tr>
+</table>
+<br>
+</body>
+</html>
