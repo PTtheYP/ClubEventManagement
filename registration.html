@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{padding:0;
+margin:0;}
+body
+{
+background-color:white;
+background-position:absolute;
+background-size:cover;
+box-sizing:border-box;
+}
+.menu-bar{
+background-color:#008B8B;
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+text-align:center;
+list-style:none;
+}
+.menu-bar ul li{
+padding:15px;
+width:120px;
+margin:15px;
+}
+.menu-bar ul li a{
+color:white;
+text-decoration:none;
+}
+.active,.menu-bar ul li:hover{
+background:pink;
+border-radius:2px;
+}
+.sub-menu{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+display:block;
+position:absolute;
+background:#008B8B;
+margin-left:-15px;
+margin-top:15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+width:110px;
+padding:10px;
+border-bottom:1px dotted white;
+text-align:left;
+background:transparent;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color:pink;
+}
+.center-div{
+padding:20px;
+width:1309px;
+height:20px;
+border:opx;
+text-align:center;
+background-color:MediumOrchid;
+color:white;
+word-spacing:20px;
+text-transform:uppercase;
+text-shadow:2px 2px 5px HotPink;
+font-size:x-large;
+}
+.left{width:45%;height:920px;float:left;padding:10px;border:2px solid DimGray ;font-style:serif;margin:20px;border-radius:20px;background-color:OldLace;background-size:cover;}
+.right{width:45%;float:right;height:920px;padding:10px;border:2px solid DimGray ;margin:20px;border-radius:20px;background-color:OldLace;}
+.personal{text-align:left;}
+.check,p
+{
+color:DarkBlue ;
+text-align:center;
+text-style;bold;
+}
+.div3{
+padding:20px;
+width:1309px;
+height:20px;
+border:opx;
+text-align:center;
+background-color:Gold;
+color:white;
+word-spacing:20px;
+//text-transform:uppercase;
+text-shadow:5px 5px 10px white;
+font-size:x-large;
+}
+.in{text-weight:1;}
+input{color:DarkGray  ;}
+</style>
+</head>
+<body>
+<div class="center-div">
+<marquee><b><i>CATS COMPUTER CLUB</i></b></marquee>
+</div>
+<div class="menu-bar">
+<ul>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\css_menu.html">Home</a></li>
+<li ><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\about.html">About</a></li>
+<li class="active"><a href="#">Register</a>
+<div class="sub-menu">
+<ul id="sub-list">
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\registration.html">Membership</a></li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\event2.html">Events</a></li>
+</ul>
+</div>
+</li>
+<li><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\contact.html">Contact</a></li>
+<li class="ri"><a href="C:\Users\NAME\Downloads\Telegram\ClubManagement\log.html">login</a></li>
+</ul>
+</div>
+<div class="div3">
+CCC's Membership Registration Form<br>
+</div>
+<form method="post">
+<div class="left">
+<pre>
+<div class="personal">
+<p>FIll the personal details</p>
+<fieldset><legend>Personal Details</legend>
+     First Name  <input class="in" type="text" size="20" maxlength="30" pattern="[A-Za-z]{3,}" value="Preethi">   Second Name <input type="text" size="20" maxlength="30" pattern="[A-Za-z]{1,}" value="S"><br><br>
+     Father Name <input class="in" type="text" size="20" maxlength="30" pattern="[A-Za-z.]{3,}" value="Sivakumar.K">   Mother Name <input type="text" size="20" maxlength="30" pattern="[A-Za-z.]{3,}" value="babysri.S"><br><br>
+     Age        <input class="in" type="number" min="18" max="100"  name="Age">                   DOB         <input type="date"  name="date"> <br><br>
+     Email1      <input class="in" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required value="preethis@gmail.com">    Email2      <input type="email" id="email" name="gmail" value="Prethis@CCC.in" required> <br><br>
+     Mobile No  <input class="in" type="text" pattern="[0-9]{10}" maxlength="10"  name="Mobile"  required>    Gender:<input type="radio" id="Male" name="Gender" checked> Male <input type="radio" id="Femle" name="Gender" > Female<br><br>
+     Address    <textarea class="in" rows="6" cols="50"  name="Address" required></textarea><br><br> 
+</fieldset><br>
+<p>Fill the univercity detais</p>
+<fieldset ><legend>Univercity Details</legend>
+     College Name   <input class="in" type="text" size="30" maxlength="50" value="KEC Perundurai"><br><br>
+     City/District  <input class="in" type="text" size="20" maxlength="20" value="Erode">   Register No  <input type="text" value="19CSR145" size="10" maxlength="20" pattern=".{5,}"><br><br>
+     Course:        <input class="in" type="radio" id="BE" name="Course" checked > BE  <input type="radio" id="Btech" name="Course" > BTech             Department  <select name="department"><option value="CSC">CSE</option><option value="IT">IT</option><option value="EEE">EEE</option><option value="MEH">Mech</option><option value="Civil">CIVIL</option><option value="ECE">ECE</option><br><br>
+</select><br><br>
+</fieldset>
+</div>
+<p>Fill the known programming languages</p>
+<fieldset>
+<legend>Known Proggramming laguages</legend>     <input type="checkbox" name="progL">C     <input type="checkbox" name="progL">c++     <input type="checkbox" name="progL">Java     <input type="checkbox" name="progL">Python     <input type="checkbox" name="progL">html     <input type="checkbox" name="progL">css     <input type="checkbox" name="progL">JavaScript<br><br>     <input type="checkbox" name="progL">SQl   <input type="checkbox" name="progL">PHP<br><br>
+</fieldset>
+<br>
+</pre>
+</div>
+<div class="right">
+<pre>
+<br><br><bR>
+<fieldset>
+     Are you a member of any other club?  <input type="radio" id="yes" name="MEMBERSHIP" checked> Yes <input type="radio" id="No" name="MEMBERSHIP" > No<br><br>
+     If yes mention the club name otherwise keep no: <br>
+                          <input type="text" size="30" maxlength="50" value="Mathemetics club" ><br><br>
+     Mention the year: 
+               
+			   from <input type="date"  maxlength="30" name="date">  To <input type="date"  maxlength="30" name="date"> <br><br>
+</fieldset>
+<br><br>
+<fieldset>
+     Why do you want to join the club?<br>
+     <textarea rows="6" cols="50"></textarea><br><br>
+     If you were selected,what will be your contribution towards this club?<br>
+     <textarea rows="6" cols="50" required></textarea><br><br>
+     Select your level in communication<br>
+     <input type="range" id="wb" name="WebDevelopment" min="1" max="10" ><br><br>
+     Upload your resume: <br>
+	 <input type="file" id="file" name="file" required ><br><br>
+</fieldset>
+<p class="check">Check whether the details are correct before submitting.</p>
+                                        <input style="background-color:SlateBlue;border-radius:10px; color:white; padding:10px;" type="submit" name="submit" >
+<br>
+</pre>
+</div>
+</form>
+</body>
+</html>
